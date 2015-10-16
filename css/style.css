@@ -1,15 +1,15 @@
 /***** CLEARFIX is applied to the parent of floated elements *************/
 /*************************************************************************/
-/* line 4, ../scss/style.scss */
+/* line 5, ../scss/style.scss */
 .clearfix {
   zoom: 1;
 }
-/* line 6, ../scss/style.scss */
+/* line 7, ../scss/style.scss */
 .clearfix:before, .clearfix:after {
   content: "";
   display: table;
 }
-/* line 10, ../scss/style.scss */
+/* line 11, ../scss/style.scss */
 .clearfix:after {
   clear: both;
 }
@@ -17,8 +17,328 @@
 /***** SITE STYLES *************/
 /**********************************/
 /* line 18, ../scss/style.scss */
-header {
-  background-image: url("../img/heroimg.svg");
+body {
+  background: #fbf9f5;
+  font-family: "Ubuntu", sans-serif;
+  color: #002041;
+}
+
+/* line 24, ../scss/style.scss */
+h2, h3, h4 {
+  font-family: "Rokkitt", serif;
+}
+
+/* line 28, ../scss/style.scss */
+ul {
+  padding: 0;
+}
+
+/* line 32, ../scss/style.scss */
+li {
+  list-style: none;
+}
+
+/* line 36, ../scss/style.scss */
+img {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+/* line 43, ../scss/style.scss */
+.top {
+  background-image: url(../img/heroimg.jpg);
   background-repeat: no-repeat;
-  background-size: fill;
+  background-position: center 20%;
+  background-size: cover;
+  width: 100%;
+  font-family: "Rokkitt", serif;
+  color: white;
+  text-align: center;
+}
+
+/* line 54, ../scss/style.scss */
+.logo {
+  width: 20%;
+  height: 20%;
+  margin: 0 auto;
+  display: block;
+}
+
+/* line 61, ../scss/style.scss */
+.register {
+  background: #f7941d;
+  color: white;
+  border: 5px solid white;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  width: 20%;
+  margin: 0 auto;
+  transition: background 0.5s ease;
+}
+/* line 74, ../scss/style.scss */
+.register:hover {
+  background: #7f4d10;
+}
+
+/* line 79, ../scss/style.scss */
+.discount {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  text-decoration: line-through;
+}
+
+/* line 87, ../scss/style.scss */
+.p2 {
+  background: #ffffff;
+}
+
+/* line 91, ../scss/style.scss */
+.maincontent {
+  width: 95%;
+  margin: 0 auto;
+}
+
+/* line 96, ../scss/style.scss */
+.firsth {
+  margin-top: 0;
+}
+
+/* line 101, ../scss/style.scss */
+.schedule ul p {
+  margin: 0;
+}
+/* line 105, ../scss/style.scss */
+.schedule ul li {
+  margin-bottom: 2%;
+}
+
+/* line 110, ../scss/style.scss */
+.wednesday {
+  border: 2px solid grey;
+}
+/* line 112, ../scss/style.scss */
+.wednesday h4 {
+  border-bottom: 2px solid grey;
+}
+
+/* line 117, ../scss/style.scss */
+.thursday {
+  border: 2px solid grey;
+}
+/* line 119, ../scss/style.scss */
+.thursday h4 {
+  border-bottom: 2px solid grey;
+}
+
+/* line 124, ../scss/style.scss */
+.friday {
+  border: 2px solid grey;
+}
+/* line 126, ../scss/style.scss */
+.friday h4 {
+  border-bottom: 2px solid grey;
+}
+
+/* line 131, ../scss/style.scss */
+.lunch {
+  border-bottom: 2px solid grey;
+  border-top: 2px solid grey;
+  padding: 1%;
+}
+
+/* line 137, ../scss/style.scss */
+.sidebar {
+  background: #b8e2b9;
+  padding: 2%;
+}
+
+/* line 142, ../scss/style.scss */
+.draplin {
+  height: 30%;
+  width: 30%;
+}
+
+/* line 147, ../scss/style.scss */
+.lukas {
+  height: 30%;
+  width: 30%;
+}
+
+/* line 152, ../scss/style.scss */
+.sponsors img {
+  margin: 0 auto;
+  height: 50%;
+  width: 50%;
+}
+
+/* line 157, ../scss/style.scss */
+.bottom p {
+  text-align: center;
+}
+
+/* line 162, ../scss/style.scss */
+.presentation {
+  background: white;
+}
+/* line 164, ../scss/style.scss */
+.presentation img {
+  height: 50%;
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* line 171, ../scss/style.scss */
+.footerimg {
+  height: 25%;
+  width: 15%;
+  margin: 0 auto;
+}
+
+/* line 177, ../scss/style.scss */
+.presentation a {
+  display: block;
+  opacity: 1.0;
+  transition: opacity 0.5s;
+}
+/* line 182, ../scss/style.scss */
+.presentation a:hover {
+  opacity: 0.4;
+}
+
+/* line 187, ../scss/style.scss */
+.sponsors a {
+  display: block;
+  opacity: 1.0;
+  transition: opacity 0.5s;
+}
+/* line 192, ../scss/style.scss */
+.sponsors a:hover {
+  opacity: 0.4;
+}
+
+/* line 197, ../scss/style.scss */
+.progress {
+  position: fixed;
+  top: 0;
+  background-color: #a6cca7;
+  opacity: 0.98;
+  width: 100%;
+  height: 50px;
+  z-index: 10000;
+}
+/* line 206, ../scss/style.scss */
+.progress img {
+  height: 75%;
+  width: 75%;
+  position: absolute;
+  left: -30%;
+}
+/* line 215, ../scss/style.scss */
+.progress a {
+  text-align: center;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 660px) {
+  /* line 224, ../scss/style.scss */
+  .wrapper {
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+  }
+
+  /* line 231, ../scss/style.scss */
+  .sidebar {
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+  }
+
+  /* line 238, ../scss/style.scss */
+  .chimp {
+    float: left;
+    width: 49%;
+  }
+
+  /* line 244, ../scss/style.scss */
+  .git {
+    float: left;
+    width: 49%;
+  }
+
+  /* line 250, ../scss/style.scss */
+  .shop {
+    float: right;
+    width: 49%;
+  }
+
+  /* line 256, ../scss/style.scss */
+  .girls {
+    float: right;
+    width: 49%;
+  }
+
+  /* line 262, ../scss/style.scss */
+  .ums {
+    float: left;
+    width: 49%;
+    vertical-align: top;
+  }
+
+  /* line 268, ../scss/style.scss */
+  .tiy {
+    float: right;
+    width: 49%;
+    vertical-align: top;
+  }
+
+  /* line 274, ../scss/style.scss */
+  .footerimg {
+    width: 10%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  /* line 281, ../scss/style.scss */
+  .wrapper {
+    width: 70%;
+    vertical-align: top;
+    display: inline-block;
+  }
+
+  /* line 287, ../scss/style.scss */
+  .sidebar {
+    width: 20%;
+    vertical-align: top;
+    display: inline-block;
+  }
+  /* line 291, ../scss/style.scss */
+  .sidebar img {
+    width: 50%;
+  }
+
+  /* line 297, ../scss/style.scss */
+  .presentation img {
+    width: 50%;
+    vertical-align: top;
+  }
+
+  /* line 304, ../scss/style.scss */
+  .sponsors img {
+    display: inline-block;
+    width: 25%;
+    max-width: 330px;
+    vertical-align: top;
+  }
+
+  /* line 312, ../scss/style.scss */
+  .footerimg {
+    width: 5%;
+    max-width: 120px;
+  }
 }
