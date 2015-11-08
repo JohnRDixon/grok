@@ -19,6 +19,7 @@ body{
     background: #fbf9f5;
     font-family: "Ubuntu", sans-serif;
     color: #002041;
+    line-height: 1.5em;
 }
 
 h2, h3, h4{
@@ -49,6 +50,10 @@ img{
     font-family: "Rokkitt", serif;
     color: white;
     text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    text-shadow:  1px 1px 0 #000000;
 }
 
 .logo{
@@ -56,6 +61,7 @@ img{
     height: 20%;
     margin: 0 auto;
     display: block;
+    // margin-top: 20px;
 }
 
 .register{
@@ -65,11 +71,31 @@ img{
     border-radius: 5px;
     text-align: center;
     text-decoration: none;
-    padding: 10px;    
-    display: block;
-    width: 20%;
+    padding: 5px;    
+    width: 50px;
     margin: 0 auto;
     transition: background 0.5s ease;
+    font-size: small;
+    
+
+    &:hover{
+      background: #7f4d10;
+    }
+}
+
+.registerone{
+    background: #f7941d;
+    color: white;
+    border: 5px solid white;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px;    
+    display: block;
+    width: 50px;
+    margin: 0 auto;
+    transition: background 0.5s ease;
+    
 
     &:hover{
       background: #7f4d10;
@@ -86,6 +112,8 @@ img{
 
 .p2{
     background: #ffffff;
+    padding: 2%;
+    box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
 }
 
 .maincontent{
@@ -97,63 +125,103 @@ img{
     margin-top: 0;
 }
 
-.schedule ul{
-    p{
-        margin: 0;
-    }
+.schedule{ 
+    padding-bottom: 2%;
+    width: 95%;
+    margin: 0 auto;
+    ul{
+        p{
+            margin: 0;
+        }
 
-    li{
-        margin-bottom: 2%;
+        li{
+            margin-bottom: 2%;
+            padding: 2%;
+            display: inline-block;
+        }
     }
 }
 
+.schedule_table{
+    width: 95%;
+    margin: 0 auto;
+
+}
+
+.hashtag{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
 .wednesday{
-    border: 2px solid grey;
-    h4{
-        border-bottom: 2px solid grey;
+    border: 2px solid #b2b2b2;
+    border-bottom: none;
+    padding: 2%;
+    h3{
+        border-bottom: 2px solid #b2b2b2;
     }
 }
 
 .thursday{
-    border: 2px solid grey;
-    h4{
-        border-bottom: 2px solid grey;
+    border: 2px solid #b2b2b2;
+    border-bottom: none;
+    padding: 2%;
+    h3{
+        border-bottom: 2px solid #b2b2b2;
     }
 }
 
 .friday{
-    border: 2px solid grey;
-    h4{
-        border-bottom: 2px solid grey;
+    border: 2px solid #b2b2b2;
+    padding: 2%;
+    h3{
+        border-bottom: 2px solid #b2b2b2;
+
     }
 }
 
 .lunch{
-    border-bottom: 2px solid grey;
-    border-top: 2px solid grey;
+    border-bottom: 2px solid #b2b2b2;
+    border-top: 2px solid #b2b2b2;
     padding: 1%;
+    background: #a6cca7;
 }
 
 .sidebar{
     background: #b8e2b9;
-    padding: 2%
+    padding: 2%;
+    
+    h4, h3{
+        margin: 0;
+    }
 }
 
 .draplin{
-    height: 30%;
-    width: 30%;
+    img{
+        height: 30%;
+        width: 30%;
+    }
 }
 
 .lukas{
-    height: 30%;
-    width: 30%;
-}
+    img{
+        height: 30%;
+        width: 30%;
+    }
+}   
 
-.sponsors img{
-    margin: 0 auto;
-    height: 50%;
-    width: 50%;
-}
+// .sponsors {
+
+//     padding-bottom: 2%;
+//     width: 95%;
+//     margin: 0 auto;
+
+//     img{
+//         margin: 0 auto;
+//         height: 50%;
+//         width: 50%;
+//     }   
+// }
 .bottom p{
     text-align: center;
 }
@@ -161,8 +229,11 @@ img{
 
 .presentation{
     background: white;
+    padding-bottom: 2%;
+    padding-left: 2%;
+    width: 95%;
+    margin: 0 auto;
     img{
-        height: 50%;
         width: 50%;
         margin: 0 auto;
     }
@@ -172,33 +243,26 @@ img{
     height: 25%;
     width: 15%;
     margin: 0 auto;
+    padding-top: 2%;
 }
 
 .presentation a{
-    display: block;
+    display: inline-block;
     opacity: 1.0;
     transition: opacity 0.5s;
+    width: 45%;
 
     &:hover{
       opacity: 0.4;
     }
 }
 
-.sponsors a{
-    display: block;
-    opacity: 1.0;
-    transition: opacity 0.5s;
-
-    &:hover{
-      opacity: 0.4;
-    }
-}
 
 .progress{
     position:fixed;
     top: 0;
-    background-color:#a6cca7;
-    opacity: 0.98;
+    background-color:#b2b2b2;
+    opacity: 0.9;
     width:100%;
     height:50px;
     z-index: 10000;
@@ -210,111 +274,187 @@ img{
         // float: left;
         position: absolute;
         left: -30%;
+        padding-top: 1%;
+    }
+
+    
+}
+
+.sponsors{
+    width: 95%;
+    padding: 2%;
+    margin: 0 auto;
+    img{
+        box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+        background: #ffffff;
+        width: 35%;
+        height: 35%;
+        padding:20px;
+        display: inline-block;
     }
 
     a{
-        // display: inline-block;
-        text-align: center;
-        margin: 0 auto;
+    display: inline-block;
+    opacity: 1.0;
+    transition: opacity 0.5s;
+
+    &:hover{
+      opacity: 0.4;
     }
+    }   
 }
+    .draplin{
+        display: inline-block;
+        width: 45%;
+        vertical-align: top;
+        margin: 0 auto;
+        padding: 2%;
+
+    }
+
+    .lukas{
+        display: inline-block;
+        width: 45%;
+        vertical-align: top;
+        margin: 0 auto;
+        padding: 2%;
+
+    }
+
+    .sidebar{
+        padding: 2%;
+        margin: 0 auto;
+        h4{
+            margin: 0;
+        }
+    }
+
+    .nav-collapse{
+        text-align: center;
+        a{
+            color: #ffffff;
+            text-decoration: none;
+        }
+        li{
+            display: inline-block;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+    }
+
 
 @media screen and (min-width: 660px){
 
     .wrapper{
         display: inline-block;
-        width: 45%;
-        vertical-align: top;
-        
     }
 
     .sidebar{
+        padding: 2%;
         display: inline-block;
-        width: 45%;
-        vertical-align: top;
-        
+        h4{
+            margin:0;
+        }
     }
 
-    .chimp{
-        float: left;
-        width: 49%;
+    // .chimp{
+    //     float: left;
+    //     width: 40%;
+    //     // background-color: #ffffff;
+    //     margin: 2%;
 
-    }
 
-    .git{
-       float: left;
-       width: 49%; 
 
-    }
+    // }
 
-    .shop{
-       float: right;
-       width: 49%; 
+    // .git{
+    //    float: left;
+    //    width: 40%; 
+    //    // background-color: #ffffff;
+    //    margin: 2%;
 
-    }
 
-    .girls{
-       float: right;
-       width: 49%;
+    // }
 
-    }
+    // .shop{
+    //    float: right;
+    //    width: 40%; 
+    //    // background-color: #ffffff;
+    //    margin: 2%;
+
+
+    // }
+
+    // .girls{
+    //    float: right;
+    //    width: 40%;
+    //    // background-color: #ffffff;
+    //    margin: 2%;
+
+
+    // }
 
     .ums{
-        float: left;
-        width: 49%;
-        vertical-align: top;
+        display: inline-block;
+        vertical-align: middle;
+        padding-top: 35px;
     }
 
     .tiy{
-        float: right;
-        width: 49%;
-        vertical-align: top;
+        display: inline-block;
+        vertical-align: middle;
     }
 
     .footerimg{
         width: 10%;
     }
 
+    
+
+
 }
 
 @media screen and (min-width: 1000px){
     .wrapper{
-        width: 70%;
-        vertical-align: top;
         display: inline-block;
     }
 
     .sidebar{
-        width: 20%;
-        vertical-align: top;
+        padding: 2%;
         display: inline-block;
         img{
             width: 50%;
         }
+        h4{
+            margin: 0;
+        }
     }
 
     .presentation{
+        width: 95%;
+        margin: 0 auto;
+        padding-left: 2%;
+        
         img{
-            width: 50%;
-            vertical-align: top;
+            
+            display: block;
+            vertical-align: middle;
         }
     }
 
-    .sponsors{
-        img{
-            display: inline-block;
-            width: 25%;
-            max-width: 330px;
-            vertical-align: top;
-        }
-    }
+    // .sponsors{
+
+    //     img{
+    //         display: inline-block;
+    //         width: 25%;
+    //         max-width: 330px;
+    //         vertical-align: top;
+    //     }
+    // }
 
     .footerimg{
         width: 5%;
         max-width: 120px;
-    }
-
-    
+    } 
 }
-
 
