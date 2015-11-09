@@ -75,7 +75,6 @@ img {
 .register {
   background: #f7941d;
   color: white;
-  border: 5px solid white;
   border-radius: 5px;
   text-align: center;
   text-decoration: none;
@@ -83,14 +82,14 @@ img {
   width: 50px;
   margin: 0 auto;
   transition: background 0.5s ease;
-  font-size: small;
+  font-size: 10pt;
 }
-/* line 81, ../scss/style.scss */
+/* line 80, ../scss/style.scss */
 .register:hover {
   background: #7f4d10;
 }
 
-/* line 86, ../scss/style.scss */
+/* line 85, ../scss/style.scss */
 .registerone {
   background: #f7941d;
   color: white;
@@ -100,16 +99,16 @@ img {
   text-decoration: none;
   padding: 15px;
   display: block;
-  width: 50px;
+  width: 100px;
   margin: 0 auto;
   transition: background 0.5s ease;
 }
-/* line 100, ../scss/style.scss */
+/* line 99, ../scss/style.scss */
 .registerone:hover {
   background: #7f4d10;
 }
 
-/* line 105, ../scss/style.scss */
+/* line 104, ../scss/style.scss */
 .discount {
   display: inline-block;
   margin: 0;
@@ -117,63 +116,64 @@ img {
   text-decoration: line-through;
 }
 
-/* line 113, ../scss/style.scss */
+/* line 112, ../scss/style.scss */
 .p2 {
   background: #ffffff;
   padding: 2%;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
-/* line 119, ../scss/style.scss */
+/* line 118, ../scss/style.scss */
 .maincontent {
   width: 95%;
   margin: 0 auto;
 }
 
-/* line 124, ../scss/style.scss */
+/* line 123, ../scss/style.scss */
 .firsth {
   margin-top: 0;
 }
 
-/* line 128, ../scss/style.scss */
+/* line 127, ../scss/style.scss */
 .schedule {
   padding-bottom: 2%;
   width: 95%;
   margin: 0 auto;
 }
-/* line 133, ../scss/style.scss */
+/* line 132, ../scss/style.scss */
 .schedule ul p {
   margin: 0;
 }
-/* line 137, ../scss/style.scss */
+/* line 136, ../scss/style.scss */
 .schedule ul li {
   margin-bottom: 2%;
   padding: 2%;
   display: inline-block;
+  width: 40%;
 }
 
 /* line 145, ../scss/style.scss */
 .schedule_table {
   width: 95%;
   margin: 0 auto;
+  background: #a6cca7;
 }
 
-/* line 151, ../scss/style.scss */
+/* line 152, ../scss/style.scss */
 .hashtag {
   margin-top: 5%;
   margin-bottom: 5%;
 }
 
-/* line 156, ../scss/style.scss */
+/* line 157, ../scss/style.scss */
 .wednesday {
   border: 2px solid #b2b2b2;
   border-bottom: none;
   padding: 2%;
 }
-/* line 160, ../scss/style.scss */
+/* line 161, ../scss/style.scss */
 .wednesday h3 {
   border-bottom: 2px solid #b2b2b2;
-  background: #b8e2b9;
 }
 
 /* line 166, ../scss/style.scss */
@@ -185,7 +185,6 @@ img {
 /* line 170, ../scss/style.scss */
 .thursday h3 {
   border-bottom: 2px solid #b2b2b2;
-  background: #b8e2b9;
 }
 
 /* line 176, ../scss/style.scss */
@@ -196,7 +195,6 @@ img {
 /* line 179, ../scss/style.scss */
 .friday h3 {
   border-bottom: 2px solid #b2b2b2;
-  background: #b8e2b9;
 }
 
 /* line 186, ../scss/style.scss */
@@ -204,7 +202,6 @@ img {
   border-bottom: 2px solid #b2b2b2;
   border-top: 2px solid #b2b2b2;
   padding: 1%;
-  background: #a6cca7;
 }
 
 /* line 193, ../scss/style.scss */
@@ -229,12 +226,12 @@ img {
   width: 30%;
 }
 
-/* line 228, ../scss/style.scss */
+/* line 217, ../scss/style.scss */
 .bottom p {
   text-align: center;
 }
 
-/* line 233, ../scss/style.scss */
+/* line 222, ../scss/style.scss */
 .presentation {
   background: white;
   padding-bottom: 2%;
@@ -242,24 +239,28 @@ img {
   width: 95%;
   margin: 0 auto;
 }
-/* line 239, ../scss/style.scss */
+/* line 228, ../scss/style.scss */
 .presentation img {
-  width: 50%;
+  width: 95%;
   margin: 0 auto;
 }
-/* line 243, ../scss/style.scss */
+/* line 232, ../scss/style.scss */
 .presentation a {
   display: inline-block;
   opacity: 1.0;
   transition: opacity 0.5s;
-  width: 45%;
+  width: 95%;
 }
-/* line 249, ../scss/style.scss */
+/* line 238, ../scss/style.scss */
 .presentation a:hover {
   opacity: 0.4;
 }
+/* line 243, ../scss/style.scss */
+.presentation.ums {
+  height: 50%;
+}
 
-/* line 255, ../scss/style.scss */
+/* line 248, ../scss/style.scss */
 .footerimg {
   height: 25%;
   width: 15%;
@@ -267,17 +268,17 @@ img {
   padding-top: 2%;
 }
 
-/* line 265, ../scss/style.scss */
+/* line 258, ../scss/style.scss */
 .progress {
   position: fixed;
-  top: 0;
-  background-color: #b2b2b2;
+  top: 50px;
+  margin-top: 4%;
   opacity: 0.9;
   width: 100%;
-  height: 50px;
+  height: 5px;
   z-index: 10000;
 }
-/* line 274, ../scss/style.scss */
+/* line 267, ../scss/style.scss */
 .progress img {
   height: 75%;
   width: 75%;
@@ -286,35 +287,43 @@ img {
   padding-top: 1%;
 }
 
-/* line 287, ../scss/style.scss */
+/* line 280, ../scss/style.scss */
 .sponsors {
   width: 95%;
   padding: 2%;
   margin: 0 auto;
 }
-/* line 291, ../scss/style.scss */
-.sponsors img {
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  background: #ffffff;
-  width: 45%;
-  height: 45%;
-  padding: 20px;
-  display: inline-block;
-}
-/* line 300, ../scss/style.scss */
+/* line 285, ../scss/style.scss */
 .sponsors a {
   display: inline-block;
+  background: #ffffff;
   opacity: 1.0;
   transition: opacity 0.5s;
-  width: 45%;
-  height: 45%;
+  width: 95%;
+  height: 150px;
+  padding: 2%;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  margin: 0.2%;
+  vertical-align: middle;
 }
-/* line 307, ../scss/style.scss */
+/* line 297, ../scss/style.scss */
 .sponsors a:hover {
   opacity: 0.4;
 }
+/* line 302, ../scss/style.scss */
+.sponsors img {
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+  vertical-align: middle;
+}
+/* line 308, ../scss/style.scss */
+.sponsors img.girls {
+  width: 30%;
+  margin: 0 auto;
+}
 
-/* line 312, ../scss/style.scss */
+/* line 314, ../scss/style.scss */
 .draplin {
   display: inline-block;
   width: 45%;
@@ -323,7 +332,7 @@ img {
   padding: 2%;
 }
 
-/* line 321, ../scss/style.scss */
+/* line 323, ../scss/style.scss */
 .lukas {
   display: inline-block;
   width: 45%;
@@ -332,101 +341,180 @@ img {
   padding: 2%;
 }
 
-/* line 330, ../scss/style.scss */
+/* line 332, ../scss/style.scss */
 .sidebar {
   padding: 2%;
   margin: 0 auto;
 }
-/* line 333, ../scss/style.scss */
+/* line 335, ../scss/style.scss */
 .sidebar h4 {
   margin: 0;
 }
 
-/* line 338, ../scss/style.scss */
+/* line 340, ../scss/style.scss */
 .nav-collapse {
   text-align: center;
+  background: #002041;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-bottom: 4%;
 }
-/* line 340, ../scss/style.scss */
+/* line 348, ../scss/style.scss */
 .nav-collapse a {
   color: #ffffff;
   text-decoration: none;
 }
-/* line 344, ../scss/style.scss */
+/* line 352, ../scss/style.scss */
 .nav-collapse li {
   display: inline-block;
   padding-left: 1%;
   padding-right: 1%;
-  width: 20%;
+  width: 15%;
   font-size: 10pt;
+  margin: 0 auto;
+  vertical-align: middle;
+}
+/* line 361, ../scss/style.scss */
+.nav-collapse img {
+  height: 50px;
 }
 
 @media screen and (min-width: 660px) {
-  /* line 356, ../scss/style.scss */
+  /* line 369, ../scss/style.scss */
   .wrapper {
     display: inline-block;
   }
 
-  /* line 360, ../scss/style.scss */
+  /* line 373, ../scss/style.scss */
   .sidebar {
     padding: 2%;
     display: inline-block;
   }
-  /* line 363, ../scss/style.scss */
+  /* line 376, ../scss/style.scss */
   .sidebar h4 {
     margin: 0;
   }
 
-  /* line 405, ../scss/style.scss */
-  .ums {
+  /* line 381, ../scss/style.scss */
+  .sponsors {
+    width: 95%;
+    padding: 2%;
+    margin: 0 auto;
+  }
+  /* line 386, ../scss/style.scss */
+  .sponsors a {
     display: inline-block;
+    background: #ffffff;
+    opacity: 1.0;
+    transition: opacity 0.5s;
+    width: 45%;
+    height: 150px;
+    padding: 2%;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    margin: 0.2%;
     vertical-align: middle;
-    padding-top: 35px;
+  }
+  /* line 398, ../scss/style.scss */
+  .sponsors a:hover {
+    opacity: 0.4;
+  }
+  /* line 403, ../scss/style.scss */
+  .sponsors img {
+    width: 65%;
+    margin: 0 auto;
+    display: block;
+    vertical-align: middle;
+  }
+  /* line 409, ../scss/style.scss */
+  .sponsors img.girls {
+    width: 30%;
+  }
+  /* line 413, ../scss/style.scss */
+  .sponsors img.chimp {
+    padding-top: 6%;
   }
 
-  /* line 411, ../scss/style.scss */
-  .tiy {
+  /* line 419, ../scss/style.scss */
+  .presentation {
+    background: white;
+    padding-bottom: 2%;
+    padding-left: 2%;
+    width: 95%;
+    margin: 0 auto;
+  }
+  /* line 425, ../scss/style.scss */
+  .presentation img {
+    width: 45%;
+    margin: 0 auto;
+  }
+  /* line 429, ../scss/style.scss */
+  .presentation a {
     display: inline-block;
+    opacity: 1.0;
+    transition: opacity 0.5s;
+    width: 45%;
     vertical-align: middle;
+    margin: 0 auto;
+  }
+  /* line 437, ../scss/style.scss */
+  .presentation a:hover {
+    opacity: 0.4;
+  }
+  /* line 442, ../scss/style.scss */
+  .presentation.ums {
+    height: 50%;
   }
 
-  /* line 416, ../scss/style.scss */
+  /* line 446, ../scss/style.scss */
   .footerimg {
     width: 10%;
   }
+
+  /* line 451, ../scss/style.scss */
+  .nav-collapse li {
+    font-size: 14pt;
+    vertical-align: middle;
+  }
+  /* line 455, ../scss/style.scss */
+  .nav-collapse a {
+    font-size: 14pt;
+  }
 }
 @media screen and (min-width: 1000px) {
-  /* line 426, ../scss/style.scss */
+  /* line 467, ../scss/style.scss */
   .wrapper {
     display: inline-block;
   }
 
-  /* line 430, ../scss/style.scss */
+  /* line 471, ../scss/style.scss */
   .sidebar {
     padding: 2%;
     display: inline-block;
   }
-  /* line 433, ../scss/style.scss */
+  /* line 474, ../scss/style.scss */
   .sidebar img {
     width: 50%;
   }
-  /* line 436, ../scss/style.scss */
+  /* line 477, ../scss/style.scss */
   .sidebar h4 {
     margin: 0;
   }
 
-  /* line 441, ../scss/style.scss */
+  /* line 482, ../scss/style.scss */
   .presentation {
     width: 95%;
     margin: 0 auto;
     padding-left: 2%;
   }
-  /* line 446, ../scss/style.scss */
+  /* line 487, ../scss/style.scss */
   .presentation img {
     display: block;
     vertical-align: middle;
   }
 
-  /* line 462, ../scss/style.scss */
+  /* line 495, ../scss/style.scss */
   .footerimg {
     width: 5%;
     max-width: 120px;
